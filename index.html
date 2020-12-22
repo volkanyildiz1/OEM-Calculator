@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oem Calculator V2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1> Oem Calculator</h1>
+    </div>
+    <div class="container">
+        <div class="card" id="card_top">
+            <form action="">
+                <input type="text" id="input_name" placeholder="Product Name">
+                <input type="text" id="input_price" placeholder="Product Price">
+            </form>
+            <button id="btn_add" ><i class="fas fa-plus"></i> Add</button>
+            <button id="btn_save" ><i class="far fa-save"></i> Save</button>
+            <button id="btn_delete" ><i class="far fa-trash-alt"></i> Delete</button>
+            <button id="btn_cancel" ><i class="fas fa-arrow-left"></i> Cancel</button>
+        </div>
+        <div id="card_middle">
+            <table class="card">
+                <tbody id="list" >
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="card_footer">
+            <p>Total (Euro)  <strong> <span id="total_euro"></span> € </strong></p>
+            <p>Total (Dolar)<strong> <span id="total_dolar"></span> $ </strong></p>
+        </div>
+    </div>
+
+
+    <script src="app.js "></script>
+    <script src="https://kit.fontawesome.com/798b4199a8.js" crossorigin="anonymous"></script> 
+</body>
+</html>
